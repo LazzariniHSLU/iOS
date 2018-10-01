@@ -23,22 +23,21 @@ class ViewController: UIViewController {
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         sliderLabel.text = String(format: "%.2f",sender.value)
         
-        if sender.value > 90{
-            if biggerThan90 == false{
-                biggerThan90 = true
-                let alertController = UIAlertController( title: "Info",
-                                                         message: "You reached 90",
-                                                         preferredStyle: .alert)
-                let defaultAction = UIAlertAction(
-                    title: "OK", style: .cancel,
-                    handler: nil)
-                alertController.addAction(defaultAction)
-                self.present(alertController, animated: true, completion: nil)
-            }
-            else{
-                biggerThan90 = false
-            }
+        if sender.value > 90 && biggerThan90 == false{
+            biggerThan90 = true
+            let alertController = UIAlertController( title: "Info",
+                                                     message: "You reached 90",
+                                                     preferredStyle: .alert)
+            let defaultAction = UIAlertAction(
+                title: "OK", style: .cancel,
+                handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
         }
+        else if sender.value < 90{
+            biggerThan90 = false
+        }
+        
     }
     
     @IBAction func spinButtonPressed(_ sender: UIButton) {
