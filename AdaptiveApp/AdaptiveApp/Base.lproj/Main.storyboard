@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,31 +14,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fruits of the world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-rO-0Af">
-                                <rect key="frame" x="309" y="40" width="406" height="60"/>
+                                <rect key="frame" x="95.666666666666686" y="40" width="223" height="38.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="1zS-a3-O4h">
-                                <rect key="frame" x="20" y="120" width="222" height="192"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="1zS-a3-O4h">
+                                <rect key="frame" x="180.66666666666666" y="98.333333333333329" width="53" height="52.999999999999986"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-Wg-yll">
-                                <rect key="frame" x="816" y="120" width="188" height="192"/>
+                                <rect key="frame" x="180" y="193" width="54" height="53"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="citron" translatesAutoresizingMaskIntoConstraints="NO" id="6kQ-gs-61d">
-                                <rect key="frame" x="20" y="332" width="222" height="201"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="citron" translatesAutoresizingMaskIntoConstraints="NO" id="6kQ-gs-61d">
+                                <rect key="frame" x="20" y="175" width="35" height="35"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="watermelon" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-Jg-58O">
-                                <rect key="frame" x="816" y="332" width="188" height="201"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermelon" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-Jg-58O">
+                                <rect key="frame" x="713" y="175" width="35" height="35"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1zS-a3-O4h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2UB-Yr-LM5"/>
+                            <constraint firstItem="1zS-a3-O4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="66U-Y1-Ogf"/>
                             <constraint firstItem="6kQ-gs-61d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Nj-Va-Vuq"/>
                             <constraint firstItem="BnS-Jg-58O" firstAttribute="top" secondItem="Os7-Wg-yll" secondAttribute="bottom" constant="20" id="QTL-J1-7LW"/>
                             <constraint firstItem="dmK-rO-0Af" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X8O-9g-1s2"/>
@@ -46,27 +50,48 @@
                             <constraint firstItem="6kQ-gs-61d" firstAttribute="top" secondItem="1zS-a3-O4h" secondAttribute="bottom" constant="20" id="fIt-kf-iEb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BnS-Jg-58O" secondAttribute="trailing" constant="20" id="gMU-12-yYV"/>
                             <constraint firstItem="dmK-rO-0Af" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gmc-HL-E8N"/>
+                            <constraint firstItem="Os7-Wg-yll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hgm-sO-cj7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Os7-Wg-yll" secondAttribute="trailing" constant="20" id="nbC-tl-dU4"/>
                             <constraint firstItem="Os7-Wg-yll" firstAttribute="top" secondItem="dmK-rO-0Af" secondAttribute="bottom" constant="20" id="pf3-GW-0Ut"/>
+                            <constraint firstItem="Os7-Wg-yll" firstAttribute="top" secondItem="1zS-a3-O4h" secondAttribute="bottom" constant="20" id="rb1-gO-fL3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="66U-Y1-Ogf"/>
+                                <exclude reference="hgm-sO-cj7"/>
+                                <exclude reference="rb1-gO-fL3"/>
+                            </mask>
+                        </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <exclude reference="6kQ-gs-61d"/>
                                 <exclude reference="BnS-Jg-58O"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Nj-Va-Vuq"/>
+                                <exclude reference="fIt-kf-iEb"/>
+                                <exclude reference="QTL-J1-7LW"/>
+                                <exclude reference="gMU-12-yYV"/>
+                                <exclude reference="nbC-tl-dU4"/>
+                                <exclude reference="2UB-Yr-LM5"/>
+                                <include reference="66U-Y1-Ogf"/>
+                                <include reference="hgm-sO-cj7"/>
+                                <exclude reference="pf3-GW-0Ut"/>
+                                <include reference="rb1-gO-fL3"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14.648437499999998" y="22.65625"/>
+            <point key="canvasLocation" x="14.492753623188406" y="22.010869565217394"/>
         </scene>
     </scenes>
     <resources>
-        <image name="apple" width="35.433071136474609" height="35.433071136474609"/>
-        <image name="cherry" width="35.433071136474609" height="35.433071136474609"/>
-        <image name="citron" width="35.433071136474609" height="35.433071136474609"/>
-        <image name="watermelon" width="35.433071136474609" height="35.433071136474609"/>
+        <image name="apple" width="53.149604797363281" height="53.149604797363281"/>
+        <image name="cherry" width="53.149604797363281" height="53.149604797363281"/>
+        <image name="citron" width="53.149604797363281" height="53.149604797363281"/>
+        <image name="watermelon" width="53.149604797363281" height="53.149604797363281"/>
     </resources>
 </document>
