@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fruits of the world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-rO-0Af">
+                                <rect key="frame" x="309" y="40" width="406" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="1zS-a3-O4h">
+                                <rect key="frame" x="20" y="120" width="222" height="192"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-Wg-yll">
+                                <rect key="frame" x="816" y="120" width="188" height="192"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="citron" translatesAutoresizingMaskIntoConstraints="NO" id="6kQ-gs-61d">
+                                <rect key="frame" x="20" y="332" width="222" height="201"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="watermelon" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-Jg-58O">
+                                <rect key="frame" x="816" y="332" width="188" height="201"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1zS-a3-O4h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2UB-Yr-LM5"/>
+                            <constraint firstItem="6kQ-gs-61d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Nj-Va-Vuq"/>
+                            <constraint firstItem="BnS-Jg-58O" firstAttribute="top" secondItem="Os7-Wg-yll" secondAttribute="bottom" constant="20" id="QTL-J1-7LW"/>
+                            <constraint firstItem="dmK-rO-0Af" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X8O-9g-1s2"/>
+                            <constraint firstItem="1zS-a3-O4h" firstAttribute="top" secondItem="dmK-rO-0Af" secondAttribute="bottom" constant="20" id="c2H-BH-Uoh"/>
+                            <constraint firstItem="6kQ-gs-61d" firstAttribute="top" secondItem="1zS-a3-O4h" secondAttribute="bottom" constant="20" id="fIt-kf-iEb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BnS-Jg-58O" secondAttribute="trailing" constant="20" id="gMU-12-yYV"/>
+                            <constraint firstItem="dmK-rO-0Af" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gmc-HL-E8N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Os7-Wg-yll" secondAttribute="trailing" constant="20" id="nbC-tl-dU4"/>
+                            <constraint firstItem="Os7-Wg-yll" firstAttribute="top" secondItem="dmK-rO-0Af" secondAttribute="bottom" constant="20" id="pf3-GW-0Ut"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="6kQ-gs-61d"/>
+                                <exclude reference="BnS-Jg-58O"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.648437499999998" y="22.65625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="35.433071136474609" height="35.433071136474609"/>
+        <image name="cherry" width="35.433071136474609" height="35.433071136474609"/>
+        <image name="citron" width="35.433071136474609" height="35.433071136474609"/>
+        <image name="watermelon" width="35.433071136474609" height="35.433071136474609"/>
+    </resources>
+</document>
