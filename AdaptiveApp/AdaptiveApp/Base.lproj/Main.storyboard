@@ -32,6 +32,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-Wg-yll">
                                 <rect key="frame" x="180" y="193" width="54" height="53"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programmed by Flavio Lazzarini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOV-rc-wgq">
+                                <rect key="frame" x="20" y="695" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="citron" translatesAutoresizingMaskIntoConstraints="NO" id="6kQ-gs-61d">
                                 <rect key="frame" x="20" y="175" width="35" height="35"/>
                             </imageView>
@@ -42,11 +48,13 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1zS-a3-O4h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2UB-Yr-LM5"/>
+                            <constraint firstItem="HOV-rc-wgq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4O7-4y-Fkc"/>
                             <constraint firstItem="1zS-a3-O4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="66U-Y1-Ogf"/>
                             <constraint firstItem="6kQ-gs-61d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Nj-Va-Vuq"/>
                             <constraint firstItem="BnS-Jg-58O" firstAttribute="top" secondItem="Os7-Wg-yll" secondAttribute="bottom" constant="20" id="QTL-J1-7LW"/>
                             <constraint firstItem="dmK-rO-0Af" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X8O-9g-1s2"/>
                             <constraint firstItem="1zS-a3-O4h" firstAttribute="top" secondItem="dmK-rO-0Af" secondAttribute="bottom" constant="20" id="c2H-BH-Uoh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HOV-rc-wgq" secondAttribute="bottom" constant="20" id="dfN-za-fgp"/>
                             <constraint firstItem="6kQ-gs-61d" firstAttribute="top" secondItem="1zS-a3-O4h" secondAttribute="bottom" constant="20" id="fIt-kf-iEb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BnS-Jg-58O" secondAttribute="trailing" constant="20" id="gMU-12-yYV"/>
                             <constraint firstItem="dmK-rO-0Af" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gmc-HL-E8N"/>
@@ -82,6 +90,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblProgrammer" destination="HOV-rc-wgq" id="kvO-GH-aBm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
