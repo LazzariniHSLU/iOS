@@ -77,16 +77,16 @@
                                 <exclude reference="BnS-Jg-58O"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8Nj-Va-Vuq"/>
-                                <exclude reference="fIt-kf-iEb"/>
-                                <exclude reference="QTL-J1-7LW"/>
                                 <exclude reference="gMU-12-yYV"/>
                                 <exclude reference="nbC-tl-dU4"/>
+                                <exclude reference="8Nj-Va-Vuq"/>
+                                <exclude reference="fIt-kf-iEb"/>
                                 <exclude reference="2UB-Yr-LM5"/>
                                 <include reference="66U-Y1-Ogf"/>
                                 <include reference="hgm-sO-cj7"/>
                                 <exclude reference="pf3-GW-0Ut"/>
                                 <include reference="rb1-gO-fL3"/>
+                                <exclude reference="QTL-J1-7LW"/>
                             </mask>
                         </variation>
                     </view>
